@@ -1,0 +1,14 @@
+prefix=/workspaces/VR_sampling/venv
+exec_prefix=${prefix}
+libdir=/workspaces/VR_sampling/venv/lib
+includedir=/workspaces/VR_sampling/venv/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.45.100
+Requires: 
+Requires.private: libavcodec >= 58.91.100, libswresample >= 3.7.100, libavutil >= 56.51.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm -lbz2 -L/workspaces/VR_sampling/venv/lib -lz -L/workspaces/VR_sampling/venv/lib -lgnutls
+Cflags: -I${includedir}

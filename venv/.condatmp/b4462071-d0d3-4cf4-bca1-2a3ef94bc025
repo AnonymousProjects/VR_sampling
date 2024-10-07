@@ -1,0 +1,14 @@
+prefix=/workspaces/VR_sampling/venv
+exec_prefix=/workspaces/VR_sampling/venv
+libdir=/workspaces/VR_sampling/venv/lib
+includedir=/workspaces/VR_sampling/venv/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/workspaces/VR_sampling/venv/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
